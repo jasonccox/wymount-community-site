@@ -1,0 +1,14 @@
+<rss version="2.0">
+  <channel>
+    <title>Wymount 7th Ward Community Announcements</title>
+    <description>A feed of announcements for the Wymount 7th Ward Community</description>
+    <link>https://community.jlcox.com/announcements</link>
+    <item>
+      <title>New Page Live!</title>
+      <date>Thu, 20 Sep 2018 02:07 PM</date>
+      <description>
+        <p>The new community page is live! We hope you find it to be useful, and we look forward to hearing your feedback.</p>
+      </description>
+    </item>
+  </channel>
+</rss>
