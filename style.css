@@ -4,7 +4,7 @@
   --dark: #032F5C;
   --light: #F7F7F7;
   --light-alt: #FFFFFF; 
-  --accent: #FABF33;
+  --accent: #e5a50d;
   --content-color: #333333; /* dark grey for text, borders, etc. */
   --error-color: red;
   --success-color: green;
@@ -253,10 +253,6 @@ section#announcements {
   background-color: var(--light-alt);
 }
 
-#old-announcements {
-  text-align: center;
-}
-
 .feed-item {
   padding: 10px;
   margin: 25px;
@@ -280,6 +276,18 @@ section#announcements {
   padding: 10px;
   font-size: var(--font-M);
   text-align: left;
+}
+
+section#announcements .subcontent {
+  font-size: var(--font-S);
+  text-align: center;
+}
+
+i.fa-rss-square{
+  font-size: var(--font-M);
+  color: var(--accent);
+  position: relative;
+  top: calc(.14*var(--font-M));
 }
 
 /*------------------ SUGGESTIONS --------------------*/
@@ -322,6 +330,12 @@ section#faq {
   grid-column: 1 / 2;
   font-size: var(--font-L);
   color: var(--dark);
+}
+
+@media screen and (min-width: 601px) {
+  .faq__btn:hover{
+    color: var(--accent);
+  }
 }
 
 .faq__q {

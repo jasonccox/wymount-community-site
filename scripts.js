@@ -29,12 +29,14 @@ $(document).ready(function(){
     }
   });
 
+  //hide menu once you lick one of the links
   $("nav a").on("click", function() {
     if($("#menu-icon").is(":visible")){
       $("nav").css("display", "none");
     }
   });
 
+  //show menu bar when screen is big enough, hide it when screen is small
   $(window).resize(function() {
     if($(window).width() > 1135) {
       if($("nav").css("display") != "block") {
@@ -81,9 +83,7 @@ $(document).ready(function(){
       var itemE = $("#feed-item-" + counter);
 
       itemE.append("<div class='feed-item__title'>" + item.find("title").text()+ "</div>");
-       
       itemE.append("<div class='feed-item__date'>" + item.find("date").text() + "</div>");
-          
       itemE.append("<div class='feed-item__content'>" + item.find("description").html() + "</div>");
     });
 });
